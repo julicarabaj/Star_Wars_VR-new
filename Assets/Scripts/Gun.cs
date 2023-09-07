@@ -5,6 +5,7 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     public GameObject bullet;
+    public GameObject player;
     public Transform bulletSpawn = null;
     public float reloadTime;
     public float inacuracy;
@@ -16,6 +17,7 @@ public class Gun : MonoBehaviour
     {
         baseReloadTime = reloadTime;
         currReloadTime = reloadTime;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
     void Update()
     {
@@ -42,8 +44,6 @@ public class Gun : MonoBehaviour
         //b.transform.eulerAngles += new Vector3(Random.Range(-inacuracy, inacuracy), Random.Range(-inacuracy, inacuracy), Random.Range(-inacuracy, inacuracy));
         //esta linea esta por si quieren hacer que la bala tenga cierta impresicion
         //en su salida. Solo la roto en x y z al azar
-        //en vez de igualarlo, cambiar el valor al que lo igualo por un multiplicador
-        reloadTime -= reloadTime * 1 / reloadTimeMultiplier;
         currReloadTime = reloadTime;
     }
 

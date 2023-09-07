@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public class NewBehaviourScript : MonoBehaviour
+public class EnemyMoovment : MonoBehaviour
 {
-    /*
+ 
     public GameObject player;
     public NavMeshAgent navMeshAgent;
     public Transform[] destinations; //Array para los puntos target del enemy
@@ -20,12 +20,12 @@ public class NewBehaviourScript : MonoBehaviour
     void Start()
     {
         navMeshAgent.destination = destinations[0].transform.position; //si se quiere un target especifico sin moverse en el start esta bien
-        //player = FindObjectOfType<InputActionManager>().GameObject;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
     void Update()
     {
         distancePlayer = Vector3.Distance(transform.position, player.transform.position);
-        if (distancePlayer <= distanceToFollow && FollowPlayer)
+        if (distancePlayer <= distanceToFollow)
         {
             FollowPlayer();
         }
@@ -40,9 +40,9 @@ public class NewBehaviourScript : MonoBehaviour
     {
         navMeshAgent.destination = destinations[i].position;
 
-        if (Vector3.Distance(transform.position, destinations[i].position <= distanceToFollowPath))
+        if (Vector3.Distance(transform.position, destinations[i].position) <= distanceToFollowPath)
         {
-            if (destinations[i] != destinations[destinations.Lenght] - 1)
+            if (destinations[i] != destinations[destinations.Length - 1])
             {
                 i++;
             }
@@ -60,5 +60,4 @@ public class NewBehaviourScript : MonoBehaviour
         navMeshAgent.destination = player.transform.position;
     }
 
-    */
 }
