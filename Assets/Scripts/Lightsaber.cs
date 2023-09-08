@@ -20,7 +20,7 @@ public class Lightsaber : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (OVRInput.GetDown(OVRInput.Button.One, controller))//(Input.GetKeyDown(KeyCode.Space))
         {
             activate = !activate;
             Debug.Log("boton");
