@@ -12,7 +12,7 @@ public class Gun : MonoBehaviour
     float currReloadTime;
     float reloadTimeMultiplier;
     float baseReloadTime;
-    bool canShoot = false;
+    bool canShoot = true;
     void Start()
     {
         baseReloadTime = reloadTime;
