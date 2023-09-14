@@ -5,7 +5,7 @@ using UnityEngine;
 public class Lightsaber : MonoBehaviour
 {
     
-    public OVRInput.Controller controller;
+  //  public OVRInput.Controller controller;
     private bool activate = false;
     private GameObject laser;
     private Vector3 fullSize;
@@ -20,7 +20,7 @@ public class Lightsaber : MonoBehaviour
 
     void Update()
     {
-        if /*(OVRInput.GetDown(OVRInput.Button.One, controller))*/(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) //(OVRInput.Get(OVRInput.Button.One)), controller))
         {
             activate = !activate;
             Debug.Log("boton");

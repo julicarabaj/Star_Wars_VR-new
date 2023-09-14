@@ -19,10 +19,12 @@ public class Lasers : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        //Instantiate(ExplosionEffect, transform.position, transform.rotation);
-        if (col.gameObject.CompareTag("Lightsaber"))
+        if (col.gameObject.name == "Lightsaber")
         {
+            Instantiate(ExplosionEffect, transform.position, transform.rotation);
             Destroy(gameObject);
+            Debug.Log("me toco ;)");
+            //no anda :(
         }   
       
     }
