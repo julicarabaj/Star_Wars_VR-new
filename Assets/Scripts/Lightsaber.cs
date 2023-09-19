@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Lightsaber : MonoBehaviour
 {
-    
-  //  public OVRInput.Controller controller;
     private bool activate = false;
     private GameObject laser;
     private Vector3 fullSize;
@@ -14,17 +12,17 @@ public class Lightsaber : MonoBehaviour
     {
         laser = transform.Find("SingleLine-TextureAdditive").gameObject;
         fullSize = laser.transform.localScale;
-        laser .transform.localScale = new Vector3(fullSize.x, 0, fullSize.z); 
+        laser.transform.localScale = new Vector3(fullSize.x, 0, fullSize.z);
     }
-
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) //(OVRInput.Get(OVRInput.Button.One)), controller))
+        if (OVRInput.Get(OVRInput.Button.One))
         {
             activate = !activate;
-            Debug.Log("boton");
+            Debug.Log("Botón One presionado");
         }
+
         if (activate && laser.transform.localScale.y < fullSize.y)
         {
             laser.transform.localScale += new Vector3(0, 0.0001f, 0);
@@ -34,5 +32,4 @@ public class Lightsaber : MonoBehaviour
             laser.transform.localScale += new Vector3(0, -0.0001f, 0);
         }
     }
-    
 }
