@@ -5,34 +5,19 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] int health;
-    // Start is called before the first frame update
-    void Start()
-    {
-        health = PersistentData.enemyHealthPoints;
-    }
+    private int golpesRecibidos = 0;
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        
-    }
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
-        if (health <= 0)
+        if (collision.gameObject.tag == "Lightsaber")
         {
-            //morir
-            Death();
+            golpesRecibidos++;
+            if (golpesRecibidos >= 5)
+            {
+                // El jugador gana el juego
+                Debug.Log("Has ganado. Le pegaste 5 veces a Darth Vader.");
+            }
         }
     }
 
-    private void Death()
-    {
-        Destroy(gameObject);
-        //sonido
-        //animacion
-        //restar una vida
-        //sumar un punto
-    }
 }

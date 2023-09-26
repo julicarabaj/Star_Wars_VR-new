@@ -9,7 +9,7 @@ public class Lasers : MonoBehaviour
     public GameObject ExplosionEffect;
     void Start()
     {
-        //Destroy(gameObject, lifeTime);
+        Destroy(gameObject, lifeTime);
     }
 
     void Update()
@@ -19,13 +19,14 @@ public class Lasers : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "Lightsaber")
+        if (col.gameObject.CompareTag("Lightsaber"))
         {
-            Instantiate(ExplosionEffect, transform.position, transform.rotation);
+            
+           // Instantiate(ExplosionEffect, transform.position, transform.rotation);
             Destroy(gameObject);
-            Debug.Log("me toco ;)");
-            //no anda :(
-        }   
-      
+            Debug.Log("¡Me toco!");
+        }
+
+
     }
 }

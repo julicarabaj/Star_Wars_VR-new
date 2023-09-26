@@ -17,7 +17,7 @@ public class Lightsaber : MonoBehaviour
 
     void Update()
     {
-        if (OVRInput.Get(OVRInput.Button.One))
+        if (OVRInput.Get(OVRInput.Button.One)) //Input.GetKeyDown(KeyCode.Space))
         {
             activate = !activate;
             Debug.Log("Botón One presionado");
