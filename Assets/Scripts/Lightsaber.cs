@@ -53,6 +53,10 @@ public class Lightsaber : MonoBehaviour
     void sounds ()
     {
         var velocity = OVRInput.GetLocalControllerAngularVelocity(controller);
+        if (velocity.magnitude > 0)
+        {
+            Debug.Log(":)");
+        }
         if (velocity.magnitude > 6)
         {
             source.PlayOneShot(AudioMovimiento);
