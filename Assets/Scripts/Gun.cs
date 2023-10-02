@@ -13,8 +13,13 @@ public class Gun : MonoBehaviour
     float reloadTimeMultiplier;
     float baseReloadTime;
     bool canShoot = true;
+    private AudioSource source;
+    public AudioClip dispara;
     void Start()
     {
+        source = gameObject.AddComponent<AudioSource>();
+        source.spatialBlend = 1;
+        source.volume = 0.5f;
         baseReloadTime = reloadTime;
         currReloadTime = reloadTime;
         player = GameObject.FindGameObjectWithTag("Player");
@@ -45,6 +50,8 @@ public class Gun : MonoBehaviour
         //esta linea esta por si quieren hacer que la bala tenga cierta impresicion
         //en su salida. Solo la roto en x y z al azar
         currReloadTime = reloadTime;
+        source.PlayOneShot(dispara);
+
     }
 
 }

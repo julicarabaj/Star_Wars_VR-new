@@ -12,10 +12,11 @@ public class EnemyHealth : MonoBehaviour
         if (collision.gameObject.tag == "Lightsaber")
         {
             golpesRecibidos++;
-            if (golpesRecibidos >= 5)
+            if (golpesRecibidos >= 10)
             {
                 // El jugador gana el juego
                 Debug.Log("Has ganado. Le pegaste 5 veces a Darth Vader.");
+                Destroy(gameObject);
             }
         }
     }

@@ -9,14 +9,14 @@ public class Lightsaber : MonoBehaviour
     private GameObject laser;
     private Vector3 fullSize;
     private AudioSource source;
-    public AudioClip audioclip;
+    public AudioClip AudioMovimiento;
     public AudioClip audioHum;
 
     void Start()
     {
         source = gameObject.AddComponent<AudioSource>();
         source.spatialBlend = 1;
-        source.volume = 0.3f;
+        source.volume = 0.8f;
         laser = transform.Find("SingleLine-TextureAdditive").gameObject;
         fullSize = laser.transform.localScale;
         laser.transform.localScale = new Vector3(fullSize.x, 0, fullSize.z);
@@ -24,22 +24,16 @@ public class Lightsaber : MonoBehaviour
 
     void Update()
     {
+        OVRInput.Update();
+        OVRInput.FixedUpdate();
         InputController();
         LaserController();
-        var velocity = OVRInput.GetLocalControllerAngularVelocity(controller);
-        if (velocity.magnitude > 1)
-        {
-            source.PlayOneShot(audioclip);
-        }
-        else if (source.isPlaying == false)
-        {
-            source.PlayOneShot(audioHum);
-        }
+        sounds();
     }
     void InputController ()
     {
-        if (Input.GetKeyDown(KeyCode.Space))//(OVRInput.Get(OVRInput.Button.One))
-        {
+        if (OVRInput.GetDown(OVRInput.Button.One))
+            {
             Debug.Log("Botón One presionado");
             activate = !activate;
         }
@@ -49,11 +43,23 @@ public class Lightsaber : MonoBehaviour
     {
         if (activate && laser.transform.localScale.y < fullSize.y)
         {
-            laser.transform.localScale += new Vector3(0, 0.0001f, 0);
+            laser.transform.localScale += new Vector3(0, 0.001f, 0);
         }
         else if (activate == false && laser.transform.localScale.y >= 0)
         {
-            laser.transform.localScale += new Vector3(0, -0.0001f, 0);
+            laser.transform.localScale += new Vector3(0, -0.001f, 0);
         }
     }   
+    void sounds ()
+    {
+        var velocity = OVRInput.GetLocalControllerAngularVelocity(controller);
+        if (velocity.magnitude > 6)
+        {
+            source.PlayOneShot(AudioMovimiento);
+        }
+        else if (source.isPlaying == false)
+        {
+            source.PlayOneShot(audioHum);
+        }
+    }
 }

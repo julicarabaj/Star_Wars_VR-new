@@ -12,8 +12,6 @@ public class EnemyMoovment : MonoBehaviour
     public Transform[] destinations; //Array para los puntos target del enemy
     public float distanceToFollowPath = 2;
     private int i = 0;
-    //[Heather(“follow player”)] //esta linea sirve para hacer comentarios en el inspector
-    public bool folllowPlayer;
     private float distancePlayer;
     public float distanceToFollow = 5;
     
@@ -25,16 +23,7 @@ public class EnemyMoovment : MonoBehaviour
     void Update()
     {
         distancePlayer = Vector3.Distance(transform.position, player.transform.position);
-        if (distancePlayer <= distanceToFollow)
-        {
-            FollowPlayer();
-        }
-        else
-        {
-            EnemyPath();
-        }
-
-
+        EnemyPath();
     }
     public void EnemyPath()
     {
@@ -54,10 +43,4 @@ public class EnemyMoovment : MonoBehaviour
         }
 
     }
-
-    public void FollowPlayer()
-    {
-        navMeshAgent.destination = player.transform.position;
-    }
-
 }
