@@ -7,10 +7,12 @@ public class Lightsaber : MonoBehaviour
     public OVRInput.Controller controller;
     private bool activate = false;
     private GameObject laser;
+    public GameObject lightsaber;
     private Vector3 fullSize;
     private AudioSource source;
     public AudioClip AudioMovimiento;
     public AudioClip audioHum;
+    private Rigidbody rb;
 
     void Start()
     {
@@ -20,6 +22,7 @@ public class Lightsaber : MonoBehaviour
         laser = transform.Find("SingleLine-TextureAdditive").gameObject;
         fullSize = laser.transform.localScale;
         laser.transform.localScale = new Vector3(fullSize.x, 0, fullSize.z);
+        //rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -52,12 +55,13 @@ public class Lightsaber : MonoBehaviour
     }   
     void sounds ()
     {
-        var velocity = OVRInput.GetLocalControllerAngularVelocity(controller);
-        if (velocity.magnitude > 0)
+        //var velocity = OVRInput.GetLocalControllerAngularVelocity(controller);
+        Vector3 velocidad = rb.velocity;
+        if (velocidad.magnitude > 0)
         {
             Debug.Log(":)");
         }
-        if (velocity.magnitude > 6)
+        if (velocidad.magnitude > 6)
         {
             source.PlayOneShot(AudioMovimiento);
         }
