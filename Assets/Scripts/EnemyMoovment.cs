@@ -14,7 +14,15 @@ public class EnemyMoovment : MonoBehaviour
     private int i = 0;
     private float distancePlayer;
     public float distanceToFollow = 5;
-    
+    public GameObject NPCPrefab;
+    public Transform target;
+    float tiempoLimite = 5;
+
+
+    private void Awake()
+    {
+        navMeshAgent = GetComponent<NavMeshAgent>();
+    }
     void Start()
     {
         navMeshAgent.destination = destinations[0].transform.position; //si se quiere un target especifico sin moverse en el start esta bien
@@ -24,6 +32,11 @@ public class EnemyMoovment : MonoBehaviour
     {
         distancePlayer = Vector3.Distance(transform.position, player.transform.position);
         EnemyPath();
+        if (tiempoLimite < Time.time)
+        {
+            Spawn();
+            tiempoLimite += 5;
+        }
     }
     public void EnemyPath()
     {
@@ -42,5 +55,10 @@ public class EnemyMoovment : MonoBehaviour
 
         }
 
+    }
+    void Spawn()
+    {
+        GameObject clon = Instantiate(NPCPrefab, transform.position, Quaternion.identity);
+        //clon.transform.destination = target.transform;
     }
 }

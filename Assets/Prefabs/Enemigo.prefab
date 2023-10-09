@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 3778851160403540321}
   - component: {fileID: 3778851160403540320}
   - component: {fileID: 3778851160403540333}
-  - component: {fileID: 3778851160403540334}
   - component: {fileID: 3778851160403540335}
   m_Layer: 0
   m_Name: Enemigo
@@ -148,19 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTR: {fileID: 0}
---- !u!114 &3778851160403540334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3778851160403540326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbf5fec30122e804d88332b2718ab048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 8
 --- !u!114 &3778851160403540335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,9 +160,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 3354400089419509951, guid: 8f56ae4315182364b9ed7b0a7b6e6387, type: 3}
+  player: {fileID: 0}
   bulletSpawn: {fileID: 3778851158701625825}
   reloadTime: 0.2
   inacuracy: 5
+  dispara: {fileID: 0}
 --- !u!1001 &3085363651299111969
 PrefabInstance:
   m_ObjectHideFlags: 0
