@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.tag == "Laser")
         {
             disparosRecibidos++;
-            if (disparosRecibidos >= 3)
+            if (disparosRecibidos >= 5)
             {
                  
             }
