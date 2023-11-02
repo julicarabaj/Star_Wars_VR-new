@@ -6,6 +6,12 @@ public class TurnToLookAt : MonoBehaviour
 {
     public Transform targetTR;
 
+    void Start()
+    {
+       
+        targetTR = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
     // Update is called once per frame
     void Update()
     {

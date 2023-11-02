@@ -31,7 +31,7 @@ public class Lightsaber : MonoBehaviour
         OVRInput.FixedUpdate();
         InputController();
         LaserController();
-        sounds();
+        //sounds();
     }
     void InputController ()
     {
@@ -53,21 +53,21 @@ public class Lightsaber : MonoBehaviour
             laser.transform.localScale += new Vector3(0, -0.001f, 0);
         }
     }   
-    void sounds ()
-    {
-        //var velocity = OVRInput.GetLocalControllerAngularVelocity(controller);
-        Vector3 velocidad = rb.velocity;
-        if (velocidad.magnitude > 0)
-        {
-            Debug.Log(":)");
-        }
-        if (velocidad.magnitude > 6)
-        {
-            source.PlayOneShot(AudioMovimiento);
-        }
-        else if (source.isPlaying == false)
-        {
-            source.PlayOneShot(audioHum);
-        }
-    }
+    //void sounds ()
+    //{
+    //    //var velocity = OVRInput.GetLocalControllerAngularVelocity(controller);
+    //    Vector3 velocidad = rb.velocity;
+    //    if (velocidad.magnitude > 0)
+    //    {
+    //        Debug.Log(":)");
+    //    }
+    //    if (velocidad.magnitude > 6)
+    //    {
+    //        source.PlayOneShot(AudioMovimiento);
+    //    }
+    //    else if (source.isPlaying == false)
+    //    {
+    //        source.PlayOneShot(audioHum);
+    //    }
+    //}
 }
