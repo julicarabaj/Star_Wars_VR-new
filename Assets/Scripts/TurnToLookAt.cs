@@ -8,7 +8,6 @@ public class TurnToLookAt : MonoBehaviour
 
     void Start()
     {
-       
         targetTR = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
