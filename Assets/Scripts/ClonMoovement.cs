@@ -14,7 +14,6 @@ public class ClonMoovement : MonoBehaviour
     private int i = 0;
     private float distancePlayer;
     public float distanceToFollow = 5;
-    public GameObject NPCPrefab;
     public Transform target;
 
     private void Awake()
