@@ -16,8 +16,6 @@ public class ClonMoovement : MonoBehaviour
     public float distanceToFollow = 5;
     public GameObject NPCPrefab;
     public Transform target;
-    float tiempoLimite = 5;
-
 
     private void Awake()
     {

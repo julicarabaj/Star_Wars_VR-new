@@ -1,4 +1,4 @@
-susing System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -17,7 +17,6 @@ public class EnemyMoovment : MonoBehaviour
     public GameObject NPCPrefab;
     public Transform target;
     float tiempoLimite = 5;
-
 
     private void Awake()
     {
@@ -58,7 +57,9 @@ public class EnemyMoovment : MonoBehaviour
     }
     void Spawn()
     {
-        GameObject clon = Instantiate(NPCPrefab, transform.position, Quaternion.identity);
+        int teleport = Random.Range(0, 4);
+        Instantiate(NPCPrefab, destinations[teleport].position, destinations[teleport].rotation);
+        //GameObject clon = Instantiate(NPCPrefab, transform.position, Quaternion.identity);
         //clon.transform.destination = target.transform;
     }
 }

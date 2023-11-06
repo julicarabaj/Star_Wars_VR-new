@@ -5,17 +5,21 @@ using UnityEngine;
 public class BallActivation : MonoBehaviour
 {
     public float tiempoDesactivacion = 30f;
+    private Animator animator;
 
     private void Start()
     {
-        // Invoca el método DesactivarEnemigo después de tiempoDesactivacion segundos
-        Invoke("DesactivarEnemigo", tiempoDesactivacion);
+        animator = GetComponent<Animator>();
+        StartCoroutine(DesactivarEnemigoConAnimacion());
     }
 
-    private void DesactivarEnemigo()
+    private IEnumerator DesactivarEnemigoConAnimacion()
     {
-        // Desactiva el GameObject del enemigo
+        if (animator != null)
+        {
+            animator.SetTrigger("ActivarAnimacion"); 
+        }
+        yield return new WaitForSeconds(tiempoDesactivacion);
         gameObject.SetActive(false);
     }
 }
-
