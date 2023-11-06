@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
             disparosRecibidos++;
             if (disparosRecibidos >= 5)
             {
-                 
+                 //moris
             }
         }
     }

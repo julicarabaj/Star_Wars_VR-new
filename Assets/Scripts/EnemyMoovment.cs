@@ -6,7 +6,6 @@ using UnityEngine.AI;
 
 public class EnemyMoovment : MonoBehaviour
 {
- 
     public GameObject player;
     public NavMeshAgent navMeshAgent;
     public Transform[] destinations; //Array para los puntos target del enemy
