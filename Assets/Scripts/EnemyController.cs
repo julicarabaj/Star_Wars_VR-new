@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public GameObject enemigo;  // Asigna el GameObject del enemigo en el Editor de Unity
-    public float tiempoActivacion = 35f;
+    public float tiempoActivacion = ;
     bool enemigoActivado;
 
     //private bool enemigoActivado = false;

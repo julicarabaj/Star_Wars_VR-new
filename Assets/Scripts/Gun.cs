@@ -15,8 +15,6 @@ public class Gun : MonoBehaviour
     bool canShoot = true;
     private AudioSource source;
     public AudioClip dispara;
-    [SerializeField] Transform rayOrigin;
-    [SerializeField] float rayLength;
     void Start()
     {
         source = gameObject.AddComponent<AudioSource>();
@@ -40,35 +38,23 @@ public class Gun : MonoBehaviour
         source.PlayOneShot(dispara);
     }
     void FixedUpdate()
-    {
-        Ray ray = new Ray(rayOrigin.position, rayOrigin.forward);
-
-        if (Physics.Raycast(ray, out RaycastHit hitInfo, rayLength))
+    { 
+        if (canShoot)
         {
-            if (hitInfo.collider.gameObject.CompareTag("Player"))
+            if (currReloadTime > 0)
             {
-                if (canShoot)
-                {
-                    if (currReloadTime > 0)
-                    {
-                        currReloadTime -= Time.deltaTime;
-                    }
-                    else
-                    {
-                        Disparar();
-                    }
-                }
-                else
-                {
-                    reloadTime = baseReloadTime;
-                }
+                currReloadTime -= Time.deltaTime;
+            }
+            else
+            {
+                Disparar();
             }
         }
-    }
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(rayOrigin.position, rayOrigin.position + rayOrigin.forward * rayLength);
+        else
+        {
+            reloadTime = baseReloadTime;
+        }
+
     }
 
 }

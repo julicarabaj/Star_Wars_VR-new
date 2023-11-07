@@ -202,11 +202,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  navMeshAgent: {fileID: 0}
+  navMeshAgent: {fileID: 3864692375496060706}
   destinations: []
   distanceToFollowPath: 2
   distanceToFollow: 5
-  NPCPrefab: {fileID: 0}
   target: {fileID: 0}
 --- !u!1001 &3085363651299111969
 PrefabInstance:
