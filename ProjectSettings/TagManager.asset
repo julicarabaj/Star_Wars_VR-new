@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Lightsaber
   - BulletSpawn
+  - Target
   layers:
   - Default
   - TransparentFX

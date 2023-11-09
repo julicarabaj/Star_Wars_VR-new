@@ -12,7 +12,7 @@ public class ClonGun : MonoBehaviour
     float currReloadTime;
     float reloadTimeMultiplier;
     float baseReloadTime;
-    bool canShoot = true;
+    bool canShoot = false;
     private AudioSource source;
     public AudioClip dispara;
     [SerializeField] Transform rayOrigin;
@@ -45,22 +45,23 @@ public class ClonGun : MonoBehaviour
         {
             if (hitInfo.collider.gameObject.CompareTag("Player"))
             {
-                if (canShoot)
-                {
-                    if (currReloadTime > 0)
-                    {
-                        currReloadTime -= Time.deltaTime;
-                    }
-                    else
-                    {
-                        Disparar();
-                    }
-                }
-                else
-                {
-                    reloadTime = baseReloadTime;
-                }
+                canShoot = true;
             }
+        }
+        if (canShoot)
+        {
+            if (currReloadTime > 0)
+            {
+                currReloadTime -= Time.deltaTime;
+            }
+            else
+            {
+                Disparar();
+            }
+        }
+        else
+        {
+            reloadTime = baseReloadTime;
         }
     }
     private void OnDrawGizmos()

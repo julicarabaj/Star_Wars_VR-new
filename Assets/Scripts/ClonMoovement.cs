@@ -14,7 +14,7 @@ public class ClonMoovement : MonoBehaviour
     private int i = 0;
     private float distancePlayer;
     public float distanceToFollow = 5;
-    public Transform target;
+    public List<Transform> destinos = new List<Transform>();
 
     private void Awake()
     {
@@ -23,8 +23,9 @@ public class ClonMoovement : MonoBehaviour
     void Start()
     {
         destinations = FindObjectOfType<EnemyPathScript>().enemyDestinations;
-        navMeshAgent.destination = destinations[0].transform.position; //si se quiere un target especifico sin moverse en el start esta bien
+        navMeshAgent.destination = destinos[0].transform.position; //si se quiere un target especifico sin moverse en el start esta bien
         player = GameObject.FindGameObjectWithTag("Player");
+        destinos = Transform.FindGameObjectsWithTag("Target").ToList();
     }
     void Update()
     {
