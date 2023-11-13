@@ -7,6 +7,8 @@ TagManager:
   - Lightsaber
   - BulletSpawn
   - Target
+  - IsWalking
+  - Death
   layers:
   - Default
   - TransparentFX

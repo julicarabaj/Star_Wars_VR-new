@@ -1,25 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    public GameObject enemigo;  // Asigna el GameObject del enemigo en el Editor de Unity
-    public float tiempoActivacion = 0f;
-    bool enemigoActivado;
-    public Transform EnemySpawn;
+    public GameObject enemigo;
+    public Transform spawnPoint;
+    public float tiempoEntreSpawn = 10f;
+    public int cantidadMaxima = 3; 
+    private int cantidadActual = 0; 
 
-    //private bool enemigoActivado = false;
-
-    private void Start()
+    void Start()
     {
-        enemigo.SetActive(true);
-        Invoke("ActivarEnemigo", tiempoActivacion);
+        InvokeRepeating("spawnPrefab", 5f, tiempoEntreSpawn);
     }
 
-    private void ActivarEnemigo()
+    void spawnPrefab()
     {
-
-        Instantiate(enemigo, EnemySpawn.position, EnemySpawn.rotation);
+        if (cantidadActual < cantidadMaxima)
+        {
+            Instantiate(enemigo, spawnPoint.position, spawnPoint.rotation);
+            cantidadActual++;
+        }
+        else
+        {
+            CancelInvoke("spawnPrefab");
+        }
     }
 }
