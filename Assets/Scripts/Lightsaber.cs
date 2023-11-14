@@ -18,11 +18,11 @@ public class Lightsaber : MonoBehaviour
     {
         source = gameObject.AddComponent<AudioSource>();
         source.spatialBlend = 1;
-        source.volume = 0.8f;
+        source.volume = 3f;
         laser = transform.Find("SingleLine-TextureAdditive").gameObject;
         fullSize = laser.transform.localScale;
         laser.transform.localScale = new Vector3(fullSize.x, 0, fullSize.z);
-        //rb = GetComponent<Rigidbody>();
+       // rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -31,16 +31,25 @@ public class Lightsaber : MonoBehaviour
         OVRInput.FixedUpdate();
         InputController();
         LaserController();
-        //sounds();
+        //Sounds();
     }
     void InputController ()
     {
         if (OVRInput.GetDown(OVRInput.Button.One))
-            {
+        {
             Debug.Log("Botón One presionado");
             activate = !activate;
-        }
 
+            // Si el botón One está encendido, reproducir el sonido de audioHum
+            if (activate)
+            {
+                source.PlayOneShot(audioHum);
+            }
+            else
+            {
+                source.Stop();
+            }
+        }
     }
     void LaserController ()
     {
@@ -53,21 +62,14 @@ public class Lightsaber : MonoBehaviour
             laser.transform.localScale += new Vector3(0, -0.001f, 0);
         }
     }   
-    //void sounds ()
-    //{
-    //    //var velocity = OVRInput.GetLocalControllerAngularVelocity(controller);
-    //    Vector3 velocidad = rb.velocity;
-    //    if (velocidad.magnitude > 0)
-    //    {
-    //        Debug.Log(":)");
-    //    }
-    //    if (velocidad.magnitude > 6)
-    //    {
-    //        source.PlayOneShot(AudioMovimiento);
-    //    }
-    //    else if (source.isPlaying == false)
-    //    {
-    //        source.PlayOneShot(audioHum);
-    //    }
-    //}
+  void Sounds()
+    {
+        Vector3 velocidad = OVRInput.GetLocalControllerAngularVelocity(controller);
+
+        // Verificar si la velocidad de la mano derecha es mayor a 5
+        if (velocidad.magnitude > 5)
+        {
+            source.PlayOneShot(AudioMovimiento);
+        }
+    }
 }

@@ -41,8 +41,9 @@ public class ClonMoovement : MonoBehaviour
 
     public void EnemyPath()
     {
-        if (navMeshAgent.remainingDistance <= distanceToFollowPath)
+        if (navMeshAgent.remainingDistance <= distanceToFollowPath) 
+        {
             SetNextDestination();
         }
     }
-}
+ }
