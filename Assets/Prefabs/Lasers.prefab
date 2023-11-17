@@ -115,6 +115,7 @@ MonoBehaviour:
   lifeTime: 5
   ExplosionEffect: {fileID: 3911755814229059625, guid: 8581d580440e79c46b289cfa385c79b4,
     type: 3}
+  clash: {fileID: 8300000, guid: 78e2db27ff7a2f9449846ba8ac544679, type: 3}
 --- !u!1001 &312784639614376321
 PrefabInstance:
   m_ObjectHideFlags: 0
