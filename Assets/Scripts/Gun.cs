@@ -27,8 +27,6 @@ public class Gun : MonoBehaviour
     void Update()
     {
         //if raycast lo detecta canshoot true;
-        
-
     }
     void Disparar ()
     {
