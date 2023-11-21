@@ -9,6 +9,7 @@ TagManager:
   - Target
   - IsWalking
   - Death
+  - Laser
   layers:
   - Default
   - TransparentFX
