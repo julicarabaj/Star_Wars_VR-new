@@ -33,11 +33,15 @@ public class Lasers : MonoBehaviour
         {
             Instantiate(ExplosionEffect, transform.position, transform.rotation);
             Destroy(gameObject);
-            Debug.Log("�Me toco!");
+            Debug.Log("Me toco!");
             if (source != null && source.enabled)
             {
                 source.PlayOneShot(clash);
             }
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 }

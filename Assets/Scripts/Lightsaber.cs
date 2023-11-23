@@ -18,7 +18,7 @@ public class Lightsaber : MonoBehaviour
     {
         source = gameObject.AddComponent<AudioSource>();
         source.spatialBlend = 1;
-        source.volume = 0f;
+        source.volume = 5f;
         laser = transform.Find("SingleLine-TextureAdditive").gameObject;
         fullSize = laser.transform.localScale;
         laser.transform.localScale = new Vector3(fullSize.x, 0, fullSize.z);

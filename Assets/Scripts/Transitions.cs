@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Transitions : MonoBehaviour
-{
+{/*
     public Text mensajeText;
 
     private void Start()
@@ -43,6 +43,6 @@ public class Transitions : MonoBehaviour
     }
 }
 
-
+    */
 }
 

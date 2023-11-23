@@ -8,7 +8,6 @@ public class Gun : MonoBehaviour
     public GameObject player;
     public Transform bulletSpawn = null;
     public float reloadTime;
-    public float inacuracy;
     float currReloadTime;
     float reloadTimeMultiplier;
     float baseReloadTime;
@@ -19,7 +18,7 @@ public class Gun : MonoBehaviour
     {
         source = gameObject.AddComponent<AudioSource>();
         source.spatialBlend = 1;
-        source.volume = 0f;
+        source.volume = 2f;
         baseReloadTime = reloadTime;
         currReloadTime = reloadTime;
         player = GameObject.FindGameObjectWithTag("Player");
@@ -31,7 +30,6 @@ public class Gun : MonoBehaviour
     void Disparar ()
     {
         var b = Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
-        //b.transform.eulerAngles += new Vector3(Random.Range(-inacuracy, inacuracy), Random.Range(-inacuracy, inacuracy), Random.Range(-inacuracy, inacuracy));
         currReloadTime = reloadTime;
         source.PlayOneShot(dispara);
     }

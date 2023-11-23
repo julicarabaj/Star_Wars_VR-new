@@ -21,7 +21,7 @@ public class ClonGun : MonoBehaviour
     {
         source = gameObject.AddComponent<AudioSource>();
         source.spatialBlend = 1;
-        source.volume = 0f;
+        source.volume = 0.01f;
         baseReloadTime = reloadTime;
         currReloadTime = reloadTime;
         player = GameObject.FindGameObjectWithTag("Player");
