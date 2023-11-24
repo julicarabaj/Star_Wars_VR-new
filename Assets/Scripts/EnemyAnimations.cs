@@ -9,7 +9,7 @@ public class EnemyAnimations : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
