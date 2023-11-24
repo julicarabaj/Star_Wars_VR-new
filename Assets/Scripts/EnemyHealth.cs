@@ -11,7 +11,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         // Inicia la animación de caminata
         animator.SetBool("IsWalking", true);
         enemyController = GetComponent<EnemyController>();
