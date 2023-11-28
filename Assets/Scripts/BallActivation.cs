@@ -5,7 +5,7 @@ using UnityEngine;
 public class BallActivation : MonoBehaviour
 {
     private float tiempoDesactivacion = 5f;
-    //private Animator animator;
+    [SerializeField] Animator animator;
     public GameObject player;
     public UnityEngine.AI.NavMeshAgent navMeshAgent;
     public Transform[] destinations; //Array para los puntos target del enemy
@@ -22,7 +22,7 @@ public class BallActivation : MonoBehaviour
     {
         navMeshAgent.destination = destinations[0].transform.position; //si se quiere un target especifico sin moverse en el start esta bien
         player = GameObject.FindGameObjectWithTag("Player");
-       // animator = GetComponent<Animator>();
+       animator = GetComponent<Animator>();
         StartCoroutine(DesactivarEnemigoConAnimacion());
     }
 
