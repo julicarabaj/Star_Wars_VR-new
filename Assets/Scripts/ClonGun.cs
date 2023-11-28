@@ -9,10 +9,10 @@ public class ClonGun : MonoBehaviour
     public Transform bulletSpawn = null;
     public float reloadTime;
     public float inacuracy;
-    float currReloadTime;
-    float reloadTimeMultiplier;
-    float baseReloadTime;
-    bool canShoot = false;
+    private float currReloadTime;
+    private float reloadTimeMultiplier;
+    private float baseReloadTime;
+    private bool canShoot = false;
     private AudioSource source;
     public AudioClip dispara;
     [SerializeField] Transform rayOrigin;

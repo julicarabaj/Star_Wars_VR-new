@@ -9,7 +9,7 @@ public class EnemyMoovment : MonoBehaviour
     public GameObject player;
     public NavMeshAgent navMeshAgent;
     public Transform[] destinations; //Array para los puntos target del enemy
-    public float distanceToFollowPath = 2;
+    public float distanceToFollowPath = 0.5f;
     private int i = 0;
     private float distancePlayer;
     public float distanceToFollow = 5;
