@@ -5,12 +5,12 @@ public class EnemyController : MonoBehaviour
     public GameObject enemigo;
     public Transform spawnPoint;
     public float tiempoEntreSpawn = 10f;
-    private int cantidadMaxima = 3; 
+    private int cantidadMaxima = 5; 
     private int cantidadActual = 0;
     public GameObject Vader;
     private AudioSource source;
     public AudioClip marcha;
-    EnemyHealth enemyhealth;
+    public EnemyHealth enemyhealth;
     public int clonesMuertos;
     void Start()
     {
@@ -27,21 +27,18 @@ public class EnemyController : MonoBehaviour
     void spawnPrefab()
     {
         //revisar de que cuando hago el clonesDestruidos++ tambien suba la cantidad en el clonesMuertos
-        if (clonesMuertos <= 5)
-        {
             if (cantidadActual < cantidadMaxima)
             {
                 Instantiate(enemigo, spawnPoint.position, spawnPoint.rotation);
                 cantidadActual++;
                 Debug.Log("Spawn Enemy");
             }
-        }
-        else
-        {
+           else
+           {
             Debug.Log("Spawn Vader");
             CancelInvoke("spawnPrefab");
             SpawnVader();
-        }
+           }
         //quiza hay que poner un else para que no los siga spawniando
     }
    public void SpawnVader()

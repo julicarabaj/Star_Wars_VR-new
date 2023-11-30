@@ -7,7 +7,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] Animator animator;
     private bool isDead = false;
     private int golpesRecibidos = 0;
-    private EnemyController enemycontroller; // Mover la declaración aquí
+    public EnemyController enemycontroller; // Mover la declaración aquí
     private void Start()
     {
         animator = GetComponentInChildren<Animator>();
@@ -36,5 +36,6 @@ public class EnemyHealth : MonoBehaviour
         Destroy(gameObject);
         isDead = true;
         enemycontroller.clonesMuertos++;
+        
     }
 }
