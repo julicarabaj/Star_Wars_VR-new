@@ -1,0 +1,388 @@
+fileFormatVersion: 2
+guid: d5c2915d055ecc442b38d11ec02c45cb
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: -4972047676907519161
+    second: default010|default001|Take 001|BaseLayer
+  - first:
+      74: -7252819934184692111
+    second: default010|default002|Take 001|BaseLayer
+  - first:
+      74: -5263825257561060786
+    second: default010|default003|Take 001|BaseLayer
+  - first:
+      74: 7748175170166627453
+    second: default010|default004|Take 001|BaseLayer
+  - first:
+      74: 6246573299384665161
+    second: default010|default004|Take 001|BaseLayer.001
+  - first:
+      74: 2527135507267609009
+    second: default010|default004|Take 001|BaseLayer.003
+  - first:
+      74: 4882149043264879070
+    second: default010|default004|Take 001|BaseLayer.004
+  - first:
+      74: -5052701114436140376
+    second: default010|default004|Take 001|BaseLayer.005
+  - first:
+      74: -7703622277901367552
+    second: default010|default004|Take 001|BaseLayer.007
+  - first:
+      74: -7192374720954598749
+    second: default010|default004|Take 001|BaseLayer.008
+  - first:
+      74: -5618632806712247704
+    second: default010|default004|Take 001|BaseLayer.009
+  - first:
+      74: 7988889169059051069
+    second: default010|default004|Take 001|BaseLayer.010
+  - first:
+      74: -2200357120360469725
+    second: default010|default004|Take 001|BaseLayer.011
+  - first:
+      74: -4598028495648326280
+    second: default010|default004|Take 001|BaseLayer.012
+  - first:
+      74: -1069381666095924705
+    second: default010|default004|Take 001|BaseLayer.014
+  - first:
+      74: -1191629353840578316
+    second: default010|default004|Take 001|BaseLayer.015
+  - first:
+      74: 480316652484059832
+    second: default010|default004|Take 001|BaseLayer.016
+  - first:
+      74: -7378438087935780289
+    second: default010|default004|Take 001|BaseLayer.017
+  - first:
+      74: 5925560448887695602
+    second: default010|default004|Take 001|BaseLayer.018
+  - first:
+      74: 3008590988097475508
+    second: default010|default004|Take 001|BaseLayer.019
+  - first:
+      74: 7444062722236124993
+    second: default010|default004|Take 001|BaseLayer.020
+  - first:
+      74: 4987809095253522614
+    second: default010|default004|Take 001|BaseLayer.021
+  - first:
+      74: -1515647858364592254
+    second: default010|default004|Take 001|BaseLayer.022
+  - first:
+      74: -2615211539168182384
+    second: default010|default004|Take 001|BaseLayer.023
+  - first:
+      74: 3259307760765995133
+    second: default010|default004|Take 001|BaseLayer.024
+  - first:
+      74: -1736105656179381834
+    second: default010|default004|Take 001|BaseLayer.025
+  - first:
+      74: 1401786330880235871
+    second: default010|default004|Take 001|BaseLayer.026
+  - first:
+      74: 6576072301820690744
+    second: default010|default004|Take 001|BaseLayer.027
+  - first:
+      74: -9077471218837142627
+    second: default010|default004|Take 001|BaseLayer.028
+  - first:
+      74: -5293462083384296485
+    second: default010|default004|Take 001|BaseLayer.029
+  - first:
+      74: 80353041370374099
+    second: default010|default004|Take 001|BaseLayer.030
+  - first:
+      74: 191156695156024808
+    second: default010|default004|Take 001|BaseLayer.031
+  - first:
+      74: -1339026289916944732
+    second: default010|default004|Take 001|BaseLayer.032
+  - first:
+      74: 3569741246045186417
+    second: default010|default004|Take 001|BaseLayer.033
+  - first:
+      74: -2451325779614990158
+    second: default010|default004|Take 001|BaseLayer.034
+  - first:
+      74: 2923731477184911893
+    second: default010|default004|Take 001|BaseLayer.035
+  - first:
+      74: -4982900492774510036
+    second: default010|default004|Take 001|BaseLayer.036
+  - first:
+      74: 1588190258738829159
+    second: default010|default004|Take 001|BaseLayer.037
+  - first:
+      74: 3238968554372349453
+    second: default010|default004|Take 001|BaseLayer.038
+  - first:
+      74: -2788579721960225109
+    second: default010|default004|Take 001|BaseLayer.039
+  - first:
+      74: 1434869090742803833
+    second: default010|default004|Take 001|BaseLayer.040
+  - first:
+      74: -4660626078239997128
+    second: default010|default004|Take 001|BaseLayer.041
+  - first:
+      74: 8340539064767394617
+    second: default010|default004|Take 001|BaseLayer.042
+  - first:
+      74: -6511987299963216770
+    second: default010|default004|Take 001|BaseLayer.043
+  - first:
+      74: -2531485374161680738
+    second: default010|default004|Take 001|BaseLayer.044
+  - first:
+      74: -265168558615252701
+    second: default010|default004|Take 001|BaseLayer.045
+  - first:
+      74: -7437305292452570383
+    second: default010|default004|Take 001|BaseLayer.046
+  - first:
+      74: -954238011840145709
+    second: default010|default004|Take 001|BaseLayer.047
+  - first:
+      74: 519272261143970821
+    second: default010|default004|Take 001|BaseLayer.048
+  - first:
+      74: -6404470896613254039
+    second: default010|default004|Take 001|BaseLayer.049
+  - first:
+      74: -8503912072204959351
+    second: default010|default004|Take 001|BaseLayer.050
+  - first:
+      74: -8615995346960186049
+    second: default010|default004|Take 001|BaseLayer.051
+  - first:
+      74: -3248457588117432427
+    second: default010|default004|Take 001|BaseLayer.052
+  - first:
+      74: 1577034741006280376
+    second: default010|default004|Take 001|BaseLayer.053
+  - first:
+      74: 7029799015040502526
+    second: default010|default004|Take 001|BaseLayer.054
+  - first:
+      74: -1417674291683014154
+    second: default010|default004|Take 001|BaseLayer.055
+  - first:
+      74: 7416580400625423607
+    second: default010|default004|Take 001|BaseLayer.056
+  - first:
+      74: -8730533296141501575
+    second: default010|default004|Take 001|BaseLayer.057
+  - first:
+      74: 8998112500225709914
+    second: default010|default004|Take 001|BaseLayer.058
+  - first:
+      74: 8064312154054112794
+    second: default010|default004|Take 001|BaseLayer.059
+  - first:
+      74: -6925216300919230344
+    second: default010|default004|Take 001|BaseLayer.060
+  - first:
+      74: -5279882809280609084
+    second: default010|default005|Take 001|BaseLayer
+  - first:
+      74: -181141378009049159
+    second: default010|default006|Take 001|BaseLayer
+  - first:
+      74: 5921013538073612272
+    second: default010|default007|Take 001|BaseLayer
+  - first:
+      74: -8058882633695268471
+    second: default010|default008|Take 001|BaseLayer
+  - first:
+      74: 4466541180195915559
+    second: default010|default009|Take 001|BaseLayer
+  - first:
+      74: -918835930914399831
+    second: default010|default010|Take 001|BaseLayer
+  - first:
+      74: 5606766191023054155
+    second: default010|default011|Take 001|BaseLayer
+  - first:
+      74: -6062478924797040411
+    second: default010|default|Take 001|BaseLayer
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: 00bf9d409fe36d848931cad07c16a6e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Default
+    second: {fileID: 2100000, guid: d75542996cc1e5643932afd9c6ceb08a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 33faea2beae8f9c42bf9e14547351f32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: default
+    second: {fileID: 2100000, guid: a2032c694e2a2634296a0736a8786be9, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: endesga-32-32x
+    second: {fileID: 2800000, guid: 5175c82a7ac367f47a8b738230436014, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t_hero_jedi_darthvader_body_c
+    second: {fileID: 2800000, guid: dcec2d4e04d8b774f8cd86f2598db541, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t_hero_jedi_darthvader_body_cs
+    second: {fileID: 2800000, guid: 95e5b8c2f6124984081244dc3d53acde, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t_hero_jedi_darthvader_body_msr
+    second: {fileID: 2800000, guid: 2e7ae86162ec3994fbac532fb73e478e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t_hero_jedi_darthvader_body_n
+    second: {fileID: 2800000, guid: 1773cbb01938cdb488053156db206734, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t_hero_jedi_darthvader_glove_c
+    second: {fileID: 2800000, guid: d8eaac63ab375d04abe22df951d33666, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t_hero_jedi_darthvader_glove_msr
+    second: {fileID: 2800000, guid: 26205184d245d294fb9b93d735d710f9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t_hero_jedi_darthvader_glove_n
+    second: {fileID: 2800000, guid: 174f9d101c1d674438e7d394b01a738c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t_hero_jedi_darthvader_helmet_c
+    second: {fileID: 2800000, guid: 51f2d409693fe2e4283d87322d2c2168, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t_hero_jedi_darthvader_helmet_msrv2
+    second: {fileID: 2800000, guid: c568120b99fe12446b0330308752ed18, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t_hero_jedi_darthvader_helmet_nv2
+    second: {fileID: 2800000, guid: a37d916521915a648b91fc911e82ad74, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
