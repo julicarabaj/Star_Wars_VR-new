@@ -8,7 +8,7 @@ public class BallActivation : MonoBehaviour
     [SerializeField] Animator animator;
     public GameObject player;
     public UnityEngine.AI.NavMeshAgent navMeshAgent;
-    public Transform[] destinations; //Array para los puntos target del enemy
+    public Transform[] destinations; 
     public float distanceToFollowPath = 2;
     private int i = 0;
     private float distancePlayer;
@@ -20,7 +20,7 @@ public class BallActivation : MonoBehaviour
     }
     private void Start()
     {
-        navMeshAgent.destination = destinations[0].transform.position; //si se quiere un target especifico sin moverse en el start esta bien
+        navMeshAgent.destination = destinations[0].transform.position; 
         player = GameObject.FindGameObjectWithTag("Player");
        animator = GetComponent<Animator>();
         StartCoroutine(DesactivarEnemigoConAnimacion());
@@ -51,10 +51,7 @@ public class BallActivation : MonoBehaviour
     }
     private IEnumerator DesactivarEnemigoConAnimacion()
     {
-        //if (animator != null)
-        //{
-        //    animator.SetTrigger("ActivarAnimacion");
-        //}
+        
         yield return new WaitForSeconds(tiempoDesactivacion);
         gameObject.SetActive(false);
     }

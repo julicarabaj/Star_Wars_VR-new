@@ -10,6 +10,7 @@ TagManager:
   - IsWalking
   - Death
   - Laser
+  - Objetivo
   layers:
   - Default
   - TransparentFX

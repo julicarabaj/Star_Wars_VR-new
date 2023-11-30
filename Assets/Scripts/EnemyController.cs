@@ -5,7 +5,7 @@ public class EnemyController : MonoBehaviour
     public GameObject enemigo;
     public Transform spawnPoint;
     public float tiempoEntreSpawn = 10f;
-    public int cantidadMaxima = 5; 
+    private int cantidadMaxima = 3; 
     private int cantidadActual = 0;
     public GameObject Vader;
     private AudioSource source;
@@ -19,6 +19,9 @@ public class EnemyController : MonoBehaviour
         source.spatialBlend = 1;
         source.volume = 3f;
         InvokeRepeating("spawnPrefab", 5f, tiempoEntreSpawn);
+    }
+    void Update()
+    {
     }
 
     void spawnPrefab()

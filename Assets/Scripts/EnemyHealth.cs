@@ -2,10 +2,11 @@ using System.Collections;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
-{
-    private int golpesRecibidos = 0;
-    private bool isDead = false;
+{  
+    [SerializeField] int colisiones; 
     [SerializeField] Animator animator;
+    private bool isDead = false;
+    private int golpesRecibidos = 0;
     private EnemyController enemycontroller; // Mover la declaración aquí
     private void Start()
     {
@@ -21,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
         if (collision.gameObject.tag == "Lightsaber")
         {
             golpesRecibidos++;
-            if (golpesRecibidos >= 2)
+            if (golpesRecibidos >= colisiones)
             {
                 Debug.Log("Muerte");
                 animator.SetBool("Death", true);

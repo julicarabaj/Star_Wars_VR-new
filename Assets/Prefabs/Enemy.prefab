@@ -235,7 +235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf5fec30122e804d88332b2718ab048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clonesDestruidos: 0
+  colisiones: 0
+  animator: {fileID: 0}
 --- !u!114 &-3663431943656256799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,7 +256,7 @@ MonoBehaviour:
   inacuracy: 5
   dispara: {fileID: 8300000, guid: 7d3f06a285b74e84e982374506efcf3f, type: 3}
   rayOrigin: {fileID: 4531344563297370276}
-  rayLength: 15
+  rayLength: 0
 --- !u!114 &-3093300577571912995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,17 +638,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e53d1bd969f7ba34ca0e6ff7a12c5bbe,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.128
+      value: -0.046
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e53d1bd969f7ba34ca0e6ff7a12c5bbe,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.043
+      value: 0.531
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e53d1bd969f7ba34ca0e6ff7a12c5bbe,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e53d1bd969f7ba34ca0e6ff7a12c5bbe,
         type: 3}
@@ -657,7 +658,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e53d1bd969f7ba34ca0e6ff7a12c5bbe,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e53d1bd969f7ba34ca0e6ff7a12c5bbe,
         type: 3}
@@ -672,7 +673,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e53d1bd969f7ba34ca0e6ff7a12c5bbe,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e53d1bd969f7ba34ca0e6ff7a12c5bbe,
         type: 3}
